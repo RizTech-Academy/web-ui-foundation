@@ -7,6 +7,8 @@ at RizTech Academy.
 A four-page site for a small yoga studio in Kothrud, Pune. **HTML and CSS only** —
 no framework, no build step, and no JavaScript anywhere.
 
+**Live: <https://riztech-academy.github.io/web-ui-foundation/>**
+
 **This is here to compare against when you are stuck, not to start from.** Build
 your own and look at this when something will not work.
 
@@ -61,11 +63,11 @@ a header drift apart. Edit the Python, not the four HTML files.
 
 ## Measured
 
-On the home page, unthrottled, from a local server:
+On the home page of the **deployed** site, unthrottled:
 
 ```
-Requests           6
-Transferred        44 KB
+Requests           6         (7 after scrolling to the lazy map)
+Transferred        35.2 KB   (43.3 KB after that scroll)
 Largest file       hero-2000.webp, 16.5 KB
 Stylesheet         15 KB
 Contrast           every text element passes AA in both light and dark mode
