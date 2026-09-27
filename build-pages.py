@@ -155,7 +155,7 @@ ABOUT_BODY = '''    <section class="section">
         <figure class="figure prose">
           <picture>
             <source type="image/webp" srcset="images/studio-400.webp 400w, images/studio-800.webp 800w, images/studio-1200.webp 1200w" sizes="(min-width: 48rem) 40rem, 100vw">
-            <img src="images/studio-800.jpg" srcset="images/studio-400.jpg 400w, images/studio-800.jpg 800w, images/studio-1200.jpg 1200w" sizes="(min-width: 48rem) 40rem, 100vw" alt="The studio floor in morning light, with mats rolled along one wall" width="800" height="533" loading="lazy">
+            <img src="images/studio-800.jpg" srcset="images/studio-400.jpg 400w, images/studio-800.jpg 800w, images/studio-1200.jpg 1200w" sizes="(min-width: 48rem) 40rem, 100vw" alt="A bright, empty practice room with a wooden reformer frame, two exercise balls and a long mirror" width="800" height="533" loading="lazy">
           </picture>
           <figcaption>The main room, before the 6:30 class.</figcaption>
         </figure>
@@ -167,7 +167,7 @@ ABOUT_BODY = '''    <section class="section">
               <div class="card__media">
                 <picture>
                   <source type="image/webp" srcset="images/teacher-meera-240.webp 240w, images/teacher-meera-480.webp 480w" sizes="(min-width: 48rem) 15rem, 100vw">
-                  <img src="images/teacher-meera-480.jpg" srcset="images/teacher-meera-240.jpg 240w, images/teacher-meera-480.jpg 480w" sizes="(min-width: 48rem) 15rem, 100vw" alt="Meera Deshpande" width="480" height="480" loading="lazy">
+                  <img src="images/teacher-meera-480.jpg" srcset="images/teacher-meera-240.jpg 240w, images/teacher-meera-480.jpg 480w" sizes="(min-width: 48rem) 15rem, 100vw" alt="Meera Deshpande, seated cross-legged with her palms pressed together at her chest" width="480" height="480" loading="lazy">
                 </picture>
               </div>
               <div class="card__body">
@@ -182,7 +182,7 @@ ABOUT_BODY = '''    <section class="section">
               <div class="card__media">
                 <picture>
                   <source type="image/webp" srcset="images/teacher-anil-240.webp 240w, images/teacher-anil-480.webp 480w" sizes="(min-width: 48rem) 15rem, 100vw">
-                  <img src="images/teacher-anil-480.jpg" srcset="images/teacher-anil-240.jpg 240w, images/teacher-anil-480.jpg 480w" sizes="(min-width: 48rem) 15rem, 100vw" alt="Anil Kulkarni" width="480" height="480" loading="lazy">
+                  <img src="images/teacher-anil-480.jpg" srcset="images/teacher-anil-240.jpg 240w, images/teacher-anil-480.jpg 480w" sizes="(min-width: 48rem) 15rem, 100vw" alt="Anil Kulkarni, standing with his eyes closed and his palms together, greenery behind him" width="480" height="480" loading="lazy">
                 </picture>
               </div>
               <div class="card__body">
@@ -277,7 +277,7 @@ CONTACT_BODY = '''    <section class="section">
           Karve Road, Kothrud, Pune 411038
         </p>
         <a class="map-link" href="https://www.openstreetmap.org/search?query=Karve%20Road%20Kothrud%20Pune">
-          <img src="images/map-kothrud-800.jpg" alt="Map showing Aarambh Yoga on Karve Road, Kothrud, Pune. Opens OpenStreetMap." width="800" height="500" loading="lazy">
+          <img src="images/map-kothrud-800.jpg" alt="Aarambh Yoga on Karve Road, Kothrud, Pune — open in OpenStreetMap" width="800" height="500" loading="lazy">
         </a>
       </div>
     </section>

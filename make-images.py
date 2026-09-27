@@ -1,10 +1,20 @@
-"""Generate the capstone's placeholder imagery.
+"""Generate the capstone's drawn imagery.
 
-Real photographs should replace these; the filenames, dimensions and aspect
-ratios are what the HTML expects, so a swap is a straight file replacement.
+Only the map stand-in is still used by the site; `fetch-photos.py` now supplies
+every other image as a real photograph. The abstract scenes below are kept
+because they show how the placeholders were made, but they are NOT written
+unless you ask for them:
+
+    python3 make-images.py            # the map only
+    python3 make-images.py --scenes   # also overwrite the photographs
+
+The filenames, dimensions and aspect ratios are what the HTML expects, so
+either way a swap is a straight file replacement.
 """
 from PIL import Image, ImageDraw, ImageFilter
-import math, os, random
+import math, os, random, sys
+
+WRITE_SCENES = "--scenes" in sys.argv
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "images")
 os.makedirs(OUT, exist_ok=True)
@@ -71,7 +81,7 @@ SCENES = {
 }
 
 made = []
-for name, s in SCENES.items():
+for name, s in (SCENES.items() if WRITE_SCENES else []):
     for w in s["widths"]:
         h = round(w / s["ratio"])
         img = compose(w, h, s["top"], s["bottom"], s["blobs"], s["seed"] + w)
