@@ -64,21 +64,28 @@ a header drift apart. Edit the Python, not the four HTML files.
 
 ## Measured
 
-On the home page of the **deployed** site, unthrottled:
+On the home page of the **deployed** site, at 1280px wide with an empty cache:
 
 ```
-Requests           6         (7 after scrolling to the lazy map)
-Transferred        35.2 KB   (43.3 KB after that scroll)
-Largest file       hero-2000.webp, 16.5 KB
-Stylesheet         15 KB
+Requests           4         (8 after scrolling to the cards and the map)
+Transferred        87.4 KB   (187.8 KB after that scroll)
+Largest transfer   hero-2000.webp, 80.0 KB
+Stylesheet         15.6 KB, 4.8 KB gzipped on the wire
+Heaviest file      hero-2000.jpg, 171 KB — the WebP is what actually ships
 Contrast           every text element passes AA in both light and dark mode
 Keyboard           16 stops, all with a visible ring, order matches the page
 320px              no horizontal scroll; the timetable scrolls inside its wrapper
 ```
 
+Both figures sit well inside the 500 KB and 20-request budget the course teaches,
+with the photographs costing roughly five times what the old generated
+placeholders did. That is the honest price of real imagery, and it is still a
+light page.
+
 The hero text was measured against the **composited image and gradient**, pixel by
-pixel, not against an assumed background — the worst pixel under any hero text is
-7.09:1.
+pixel, not against an assumed background. The worst pixel under any hero text is
+5.03:1, under the eyebrow at 320px, where `object-fit: cover` brings the bright
+window behind the text; the scrim's weak end stays at `0.55` because of it.
 
 ## About the images
 
